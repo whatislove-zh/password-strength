@@ -36,7 +36,7 @@ export const checkPasswordStrength = (password) => {
         ...styles,
         firstSectionColor: "yellow",
         secondSectionColor: "yellow",
-        message:"Password is medium strangth"
+        message:"Password is medium strength"
       }
   }
   if (hasDigits || hasLetters || hasSpecialCharacters){
