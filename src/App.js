@@ -1,9 +1,9 @@
-import { PasswordCheck } from "./components/PasswordCheck";
+import { Password } from "./components/Password";
 
 
 function App() {
   return (
-    <>Hello</>
+    <Password />
   );
 }
 
