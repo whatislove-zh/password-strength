@@ -2,7 +2,6 @@ export const checkPasswordStrength = (password) => {
   const hasLetters = /[a-zA-Z]/.test(password);
   const hasDigits = /\d/.test(password);
   const hasSpecialCharacters = /[-!@#$%^&*_.]/.test(password);
-  const mediumCondition = (hasLetters && hasDigits) || (hasLetters && hasSpecialCharacters) || (hasDigits && hasSpecialCharacters)
 
   const styles = {
     firstSectionColor: "grey",
@@ -31,7 +30,7 @@ export const checkPasswordStrength = (password) => {
       message:"Password is strong"
     };
   }
-  if (mediumCondition){
+  if (hasDigits + hasLetters + hasSpecialCharacters === 2){
     return {
         ...styles,
         firstSectionColor: "yellow",
